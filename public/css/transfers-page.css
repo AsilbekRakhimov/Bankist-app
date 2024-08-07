@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(45, 44, 44, 0.95);
+    background-color: rgb(173, 173, 174, 0.7);
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hero_inner_1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.time-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.current-time{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.balance-money{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.hero_inner_2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tranfers-list{
+    height: 490px;
+    width: 550px;
+    border-radius: 14px;
+    overflow-y: scroll;
+}
+
+.tranfers-list::-webkit-scrollbar{
+    display: none;
+}
+
+.transfers-list-inner{
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.transfers-list-inner div{
+    display:flex;
+    justify-content:space-between; 
+    border:2px solid white;
+    padding: 15px 20px;
+    border-radius: 14px;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.deposit{
+    background-color:rgb(3, 145, 3, 0.8);
+    padding:5px 15px; 
+    color:white; 
+    border-radius: 18px;
+}
+
+.withdrawal{
+    background-color:rgb(244, 6, 6,0.8);
+    padding:5px 15px; 
+    color:white; 
+    border-radius: 18px;
+}
+
+.tranfers{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* transfers send money to */
+
+.transfer-money{
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    align-items: center;
+    gap: 20px;
+    padding: 22px 30px;
+    border-radius: 14px;
+}
+.transfer-money h2{
+    display: flex;
+    align-self: flex-start;
+}
+.transfer-money div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.transfer-money button{
+    align-self: flex-start;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.transfer-money button:hover{
+    background-color: rgb(3, 171, 3);
+}
+
+.tranfers-input{
+    display: flex;
+    flex-direction: column;
+}
+
+/*   transfers send money to  */
+
+
+/* Get loan */
+.request-loan{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(83, 233, 83);
+    gap: 20px;
+    padding: 22px 30px;
+    border-radius: 14px;
+}
+
+/* .request-loan h2{
+    align-self: center;
+} */
+
+.request-loan div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.request-loan button{
+    align-self: flex-start;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px 18px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.request-loan button:hover{
+    background-color: rgb(3, 171, 3);
+}
+
+.request-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* Get loan */
+
+/* CLose account */
+.close-account{
+    background-color: rgb(243, 7, 7, 0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 30px;
+    border-radius: 14px;
+}
+
+.close-account-wrapper{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.close-account-wrapper button{
+    align-self: flex-start;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.close-account-wrapper button:hover{
+    background-color: rgb(3, 171, 3);
+}
+
+.close-acc-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Close account */
+
+
+.all-transfers-history{
+    display: flex;
+    gap: 15px;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.wrapper-all-history-inner{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.all-interest-money, .all-in-money, .all-out-money{
+    font-size: 30px;
+}
+
+.all-interest-money, .all-in-money{
+    color: rgb(4, 136, 4);
+}
+
+.all-out-money{
+    color: red;
+}
+
+input{
+    font-size: 16px;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: rgb(222, 224, 227, 0.8);
+}
+
+@media screen and (max-width:1260px){
+    .container{
+        width: 960px;
+        padding: 25px;
+        padding-right: 50px;
+    }
+    input{
+        font-size: 14px;
+        padding: 5px 12px;
+    }
+}
+@media screen and (max-width:992px){
+    .container{
+        width: 800px;
+        padding: 10px;
+        padding-right: 40px;
+    }
+    input{
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    .balance-money{
+        font-size: 36px;
+        align-self: center;
+    }
+    .request-loan,.close-account, .transfer-money{
+        width: 450px;
+    }
+    .close-account-wrapper{
+        align-items: center;
+        gap: 5px;
+    }
+    .close-account-wrapper input{
+        width: 150px;
+    }
+    .tranfers-list{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:835px){
+    .container{
+        width: 550px;
+        padding: 10px;
+    }
+    .hero_inner_2{
+        flex-direction: column-reverse;
+        gap: 20px;
+        align-items: center;
+    }
+    .balance-money{
+        font-size: 32px;
+    }
+    
+
+}
+
+@media screen and (max-width:570px){
+    .container{
+        width: 460px;
+        padding: 35px;
+        padding-left: 30px;
+    }
+    .hero_inner_2{
+        flex-direction: column-reverse;
+        gap: 14px;
+        align-items: center;
+    }
+    .balance-money{
+        font-size: 26px;
+    }
+    .transfers-list-inner div{
+        padding-right: 30px;
+    }
+    .all-transfers-history{
+        /* margin-top: 30px; */
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:440px){
+    .container{
+        width: 398px;
+        padding: 10px 30px;
+    }
+    .request-loan, .close-account , .transfer-money {
+        width: 360px;
+    }
+    .request-loan div, .close-account div, .transfer-money div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tranfers-list{
+        width: 360px;
+    }
+}

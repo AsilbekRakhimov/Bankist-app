@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/public/images/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/public/css/main.css" />
+    <title>Bankist</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="container">
+          <div class="logo-wrapper">
+            <img src="/public/images/logo.png" alt="Rasm bor" class="logo" />
+            <h1>Welcome to our bank</h1>
+            <button type="button" class="sign-in-btn">Sign in</button>
+          </div>
+          <div class="modalWrapper">
+            <div class="modal hidden">
+                <form class="sign-in-form">
+                  <div><i class="bx bx-x back-icon"></i></div>
+                  <div class="sign-in-wrapper">
+                    <h1>Sign in</h1>
+                    <span>
+                      <label for="username">Enter username</label>
+                      <input type="text" id="username" name="username" class="username-input"/>
+                    </span>
+                    <span>
+                      <label for="password">Enter password</label>
+                      <input type="text" id="password" name="pasword" class="password-input"/>
+                    </span>
+                    <button type="submit" class="sign-in-btn-submit">Sign in</button>
+                  </div>
+                </form>
+              </div>
+          </div>
+          <div class="users-list">
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/public/js/main.js"></script>
+  </body>
+</html>

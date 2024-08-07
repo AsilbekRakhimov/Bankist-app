@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/public/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/public/css/transfers-page.css" />
+    <title>Transfers</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="container">
+          <div class="wrapper">
+            <div class="hero_inner_1">
+              <div class="time-wrapper">
+                <h1>Current balance</h1>
+                <p class="current-time"></p>
+              </div>
+              <p class="balance-money">$0</p>
+            </div>
+            <div class="hero_inner_2">
+              <div class="tranfers-list">
+                <div class="transfers-history"></div>
+              </div>
+              <div class="tranfers">
+                <!-- Transfers money part -->
+                <form class="transfer-form">
+                  <div class="transfer-money">
+                    <h2>Transfer money</h2>
+                    <div class="tranfers-to-smone">
+                      <div class="tranfers-input">
+                        <input type="text" id="money-transfer" name="transfer_to_username" class="transfer_to_username"/>
+                        <label for="money-transfer">Transfer to</label>
+                      </div>
+                      <div class="tranfers-input">
+                        <input type="number" id="money-amount" name="transfer_to_amount" class="transfer_to_amount"/>
+                        <label for="money-amount">Amount money</label>
+                      </div>
+                      <button type="submit">Send</button>
+                    </div>
+                  </div>
+                </form>
+                <!-- Transfers money part -->
+
+                <!-- Get loan part -->
+                <form class="loan-form">
+                  <div class="request-loan">
+                    <h2>Request loan</h2>
+                    <div>
+                      <div class="request-input">
+                        <input type="number" id="money-amount" name="loan_amount"/>
+                        <label for="money-amount">Amount money</label>
+                      </div>
+                      <button type="submit">Get</button>
+                    </div>
+                  </div>
+                </form>
+                <!-- Get loan part -->
+
+                <!-- Close account -->
+                <div class="close-account">
+                  <h1>Close account</h1>
+                  <form>
+                    <div class="close-account-wrapper">
+                      <div class="close-acc-input">
+                        <input type="text" id="username-close-acc" />
+                        <label for="username-close-acc">Confirm user</label>
+                      </div>
+                      <div class="close-acc-input">
+                        <input type="text" id="close-acc-password" />
+                        <label for="close-acc-password">Confirm password</label>
+                      </div>
+                      <button type="submit">Confirm</button>
+                    </div>
+                  </form>
+                </div>
+                <!-- Close account -->
+              </div>
+            </div>
+          </div>
+          <div class="all-transfers-history">
+            <div  class="wrapper-all-history-inner">
+              <label for="">In:</label>
+              <p class="all-in-money">789</p>
+            </div>
+            <div class="wrapper-all-history-inner">
+              <label for="">Out:</label>
+              <p class="all-out-money">5678</p>
+            </div>
+            <div class="wrapper-all-history-inner">
+              <label for="">Interest:</label>
+              <p class="all-interest-money">$6789</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/public/js/transfers-page.js"></script>
+  </body>
+</html>

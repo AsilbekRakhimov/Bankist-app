@@ -1,0 +1,18 @@
+{
+    ".css": "text/css",
+    ".html": "text/html",
+    ".json": "application/json",
+    ".js":"text/javascript",
+    ".jpg":"image/jpeg",
+    ".jpeg":"image/jpeg",
+    ".png":"image/png",
+    ".gif":"image/gif",
+    ".svg": "image/svg+xml",
+    ".ico":"image/x-icon",
+    ".wav": "audio/wav",
+    ".ogg": "audio/ogg",
+    ".mp4": "video/mp4",
+    ".xml": "application/xml",
+    ".pdf": "application/pdf",
+    ".zip": "application/zip"
+}
