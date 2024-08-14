@@ -5,7 +5,7 @@ import formidable from "formidable";
 import dotenv from 'dotenv';
 dotenv.config()
 
-const port = process.env.PORT;
+const port = process.env.APP_PORT;
 const __dirname = import.meta.dirname;
 
 const server = http.createServer(async (req, res) => {
@@ -259,6 +259,6 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(port, () => {
+server.listen(port, "localhost", () => {
   console.log(`Server ${port}-portda ishga tushdi!`);
 });
