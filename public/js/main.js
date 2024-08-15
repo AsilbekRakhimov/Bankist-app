@@ -10,7 +10,7 @@ const passwordInput = document.querySelector(".password-input");
 
 //  get data from url
 async function getUsers() {
-  const res = await fetch("http://localhost:3002/users");
+  const res = await fetch("https://bankist-app-4.onrender.com//users");
   const data = await res.json();
   const boxUsers = document.createElement("div");
   boxUsers.className = "users-list-for-login";
@@ -36,7 +36,7 @@ userForm.addEventListener("submit", async (event) => {
   event.preventDefault();
   const username = event.target.username.value;
   const password = event.target.password.value;
-  const res = await fetch(`http://localhost:3002/user`, {
+  const res = await fetch(`https://bankist-app-4.onrender.com/user`, {
     method: "POST",
     body: JSON.stringify({
       username: username,

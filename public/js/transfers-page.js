@@ -38,7 +38,7 @@ setInterval(() => {
 
 async function getUserData() {
   const res = await fetch(
-    `http://localhost:3002/user_data?${window.location.href.split("?")[1]}`
+    `https://bankist-app-4.onrender.com/user_data?${window.location.href.split("?")[1]}`
   );
   const data = await res.json();
   return data;
@@ -86,7 +86,7 @@ transferForm.addEventListener("submit", async (event)=>{
   const toUsername = event.target.transfer_to_username.value;
   const amount = event.target.transfer_to_amount.value
   try {
-    const res = await fetch(`http://localhost:3002/update` , {
+    const res = await fetch(`https://bankist-app-4.onrender.com/update` , {
     method:"POST",
     body:JSON.stringify({
       fromUsername:fromUsername,
@@ -109,7 +109,7 @@ loanForm.addEventListener("submit", async (e) =>{
   const loan_amount = e.target.loan_amount.value
   console.log(loan_amount);
   const username = window.location.href.split("?")[1]
-  const res = await fetch(`http://localhost:3002/loan`, {
+  const res = await fetch(`https://bankist-app-4.onrender.com/loan`, {
     method:"POST",
     body:JSON.stringify({
       username:username,
