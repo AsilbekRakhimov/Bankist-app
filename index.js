@@ -5,7 +5,7 @@ import formidable from "formidable";
 import dotenv from 'dotenv';
 dotenv.config()
 
-const port = process.env.PORT;
+const port = process.env.PORT || 4000;
 const __dirname = import.meta.dirname;
 
 const server = http.createServer(async (req, res) => {
